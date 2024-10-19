@@ -1,6 +1,7 @@
 # Nice etwork animations
 _*.py
 shp/
+blender/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
