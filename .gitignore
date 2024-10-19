@@ -1,3 +1,7 @@
+# Nice etwork animations
+_*.py
+shp/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
