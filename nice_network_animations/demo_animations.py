@@ -37,7 +37,7 @@ def horizontal_wave(gdf, frames:int = 10, epsg = 3435, n_periods = 3) -> gpd.Geo
         animation_gdf[col_name] = y_vals
 
     # drop everything except for animation frames and geometry
-    keep_cols = [col for col in animation_gdf.columns if col.startswith("t")] + ["geometry"]
+    keep_cols = [col for col in animation_gdf.columns if col.startswith("t")] + ["FRC", "geometry"]
     animation_gdf = animation_gdf[keep_cols]
 
     return animation_gdf
@@ -105,7 +105,7 @@ def spider_wave(gdf, frames:int = 10, epsg=3435, center="Chicago", n_periods = 3
         gdf[col_name] = radial_sine_vals
 
     # drop everything except for animation frames and geometry
-    keep_cols = [col for col in gdf.columns if col.startswith("t")] + ["geometry"]
+    keep_cols = [col for col in gdf.columns if col.startswith("t")] + ["FRC", "geometry"]
     animation_gdf = gdf[keep_cols]
 
     return animation_gdf

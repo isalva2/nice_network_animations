@@ -1,7 +1,10 @@
-# Nice etwork animations
+# Nice Network animations
 _*.py
 shp/
 blender/
+
+# mac crap
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
