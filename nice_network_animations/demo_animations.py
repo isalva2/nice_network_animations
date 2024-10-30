@@ -43,7 +43,7 @@ def horizontal_wave(gdf, frames:int = 10, epsg = 3435, n_periods = 3) -> gpd.Geo
     return animation_gdf
 
 
-def spider_wave(gdf, frames:int = 10, epsg=3435, center="Chicago", n_periods = 3) -> gpd.GeoDataFrame:
+def spider_wave(gdf, frames:int = 10, epsg=3435, center="Chicago", n_periods = 2) -> gpd.GeoDataFrame:
     """
     Strips all attribute information from GeoDataFrame and
     adds animation. This one is a radial sine wave, default
